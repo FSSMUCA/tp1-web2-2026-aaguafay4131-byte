@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice X</h1>
+    <!-- Votre contenu HTML ici -->
+
+    <script>
+        
+        let prenom = window.prompt("Quel est votre prénom ?");
+        let age = window.prompt("Quel est votre âge ?");
+        age = Number(age); // Convertir l'âge en nombre
+        
+        anneeNaissance = 2026 - age;
+
+        window.alert(`Bonjour ${prenom} ! Vous êtes né(e) vers ${anneeNaissance}.`);
+
+        let choix = window.confirm("Afficher dans la console ?");
+
+        if (choix) {
+            console.log("Prenom :", prenom);
+            console.log("Age :", age);
+            console.log("Année de naissance :", anneeNaissance);
+        }
+
+    </script>
+  </body>
+</html>
